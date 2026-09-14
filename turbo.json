@@ -1,0 +1,63 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "GATEWAY_API_KEY",
+    "GATEWAY_BASE_URL",
+    "CHAT_MODEL",
+    "EMBEDDING_MODEL",
+    "EMBEDDING_DIMENSION",
+    "DOCS_LLMS_URL",
+    "DATABASE_URL",
+    "MASTRA_URL",
+    "CORS_ORIGINS",
+    "ROCK8CLOUD_API_URL",
+    "ROCK8CLOUD_API_KEY",
+    "ROCK8CLOUD_ORG_ID",
+    "ROCK8CLOUD_SERVICE_ID",
+    "ROCK8CLOUD_AGENT_MODEL_ID",
+    "DUPLICATE_THRESHOLD",
+    "AGENT_TIMEOUT_MS",
+    "AGENT_POLL_INTERVAL_MS",
+    "DOCS_INTENT_THRESHOLD",
+    "ANALYSIS_CONFIDENCE_FLOOR",
+    "MAX_AUTOFIX_FILES",
+    "MASTRA_API_PREFIX",
+    "MASTRA_STUDIO_BASE_PATH"
+  ],
+  "globalDependencies": [
+    ".env"
+  ],
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        ".mastra/output/**",
+        "dist/**",
+        ".output/**"
+      ]
+    },
+    "check": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "docs:index": {
+      "cache": false
+    },
+    "eval": {
+      "cache": false
+    },
+    "eval:freeze": {
+      "cache": false
+    },
+    "models": {
+      "cache": false
+    }
+  }
+}

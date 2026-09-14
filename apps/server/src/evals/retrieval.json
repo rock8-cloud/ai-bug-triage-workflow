@@ -1,0 +1,399 @@
+{
+  "frozenAt": "2026-09-12T11:08:44.509Z",
+  "embeddingModel": "rock8router/openai/text-embedding-3-small",
+  "index": "rock8_docs",
+  "topK": 4,
+  "docsIntentThreshold": 0.52,
+  "retrievals": {
+    "sidebar-overflow": {
+      "query": "Long project names overflow the sidebar. A project named \"production-eu-west-analytics-pipeline\" runs past the edge of the sidebar and covers the settings icon. Shorter names are fine.",
+      "snippets": [
+        {
+          "id": "/docs/blueprints/elysia-tanstack-dashboard#17",
+          "title": "Elysia + TanStack Dashboard - Blueprint",
+          "url": "https://docs.rock8.cloud/docs/blueprints/elysia-tanstack-dashboard",
+          "heading": "",
+          "text": "An opinionated starter for authenticated web products, built with [Elysia](https://elysiajs.com/) on [Bun](https://bun.sh/) and [TanStack Start](https://tanstack.com/start), managed as a [Turborepo](https://turborepo.dev/) monorepo. One repository, two services, one database.\n\n**Tech stack:**\n\n| Layer       | Technology                                                                                                         |\n| ----------- | ------------------------------------------------------------------------------------------------------------------ |\n| API         | Elysia on Bun, port 3001                                                                                           |\n| Type safety | [Eden](https://elysiajs.com/eden/overview) - the web app imports the API *type*, no codegen, no shared DTO package |\n| Auth        | [better-auth](https://better-auth.com/) cookie sessions, email and password, OIDC-ready                            |\n| Database    | PostgreSQL + [Drizzle ORM](https://orm.drizzle.team/)                                                              |\n| Web         | TanStack Start + TanStack Query + [shadcn/ui](https://ui.shadcn.com/) on Base UI, port 3000                        |\n\n<a href=\"https://github.com/rock8-cloud/elysia-tanstack-dashboard-monorepo\" target=\"_blank\" rel=\"noopener noreferrer\">\n  View on GitHub →\n</a>\n\n***",
+          "score": 0.37620431108450814
+        },
+        {
+          "id": "/docs/first-deployment#113",
+          "title": "Your First Deployment",
+          "url": "https://docs.rock8.cloud/docs/first-deployment",
+          "heading": "Step 5: Configure Your Deployment",
+          "text": "Rock8Cloud generates sensible defaults, but you can customize:\n\n* **Project Name** - Groups your services together\n* **App Name** - Name for this service\n* **URL** - Your app's public URL. The first part is yours to edit (or roll with ↻). You can attach your own domain later.\n\n***",
+          "score": 0.37095710311456354
+        },
+        {
+          "id": "/docs/blueprint#6",
+          "title": "Blueprints",
+          "url": "https://docs.rock8.cloud/docs/blueprint",
+          "heading": "Elysia + TanStack Dashboard",
+          "text": "Authenticated dashboard starter, typed end to end. Elysia API on Bun plus a TanStack Start web app on PostgreSQL, in one monorepo, with a seeded demo login.\n\n| Layer       | Technology                                              |\n| ----------- | ------------------------------------------------------- |\n| API         | Elysia on Bun (port 3001)                               |\n| Web         | TanStack Start + TanStack Query + shadcn/ui (port 3000) |\n| Auth        | better-auth cookie sessions                             |\n| Database    | PostgreSQL + Drizzle ORM                                |\n| Type safety | Eden, the web app imports the API type                  |\n\n[View full details →](/docs/blueprints/elysia-tanstack-dashboard)  ·  <a href=\"https://github.com/rock8-cloud/elysia-tanstack-dashboard-monorepo\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub →</a>\n\n***",
+          "score": 0.36224642149663544
+        },
+        {
+          "id": "/docs/blueprints/strapi-nextjs#44",
+          "title": "Strapi + Next.js - Blueprint",
+          "url": "https://docs.rock8.cloud/docs/blueprints/strapi-nextjs",
+          "heading": "",
+          "text": "A content website built with [Strapi 5](https://strapi.io/) and [Next.js 16](https://nextjs.org/), managed as a [Turborepo](https://turborepo.dev/) monorepo. One repository, two services, a database, and a media bucket, all wired up on deploy.\n\n**Tech stack:**\n\n| Layer    | Technology                                                     |\n| -------- | -------------------------------------------------------------- |\n| CMS      | Strapi 5 (TypeScript), port 1337                               |\n| Frontend | Next.js 16 App Router, Turbopack, standalone output, port 3000 |\n| Styling  | Tailwind v4 + shadcn/ui                                        |\n| Database | PostgreSQL via `DATABASE_URL`                                  |\n| Media    | S3-compatible object storage                                   |\n\nContent model: a `Page` collection with dynamic-zone blocks, plus `Navbar` and `Footer` single types.\n\n<a href=\"https://github.com/rock8-cloud/strapi-next-turborepo-starter\" target=\"_blank\" rel=\"noopener noreferrer\">\n  View on GitHub →\n</a>\n\n***",
+          "score": 0.34019360498461904
+        }
+      ],
+      "confidence": 0.37206312581018014,
+      "topScore": 0.37620431108450814
+    },
+    "crash-empty-repo": {
+      "query": "Analysis crashes on a repository with no commits. Pointing the analyser at a freshly created empty repo throws \"Cannot read properties of undefined (reading sha)\" instead of reporting that there is nothing to analyse.",
+      "snippets": [
+        {
+          "id": "/docs/guides/code-analysis#151",
+          "title": "Code Analysis",
+          "url": "https://docs.rock8.cloud/docs/guides/code-analysis",
+          "heading": "Running an Analysis",
+          "text": "1. Open a repo service\n2. Go to the **Project Overview** tab\n3. Click **Analyze** (or **Re-analyze** if a previous analysis exists)\n\nResults appear within a few seconds. You can re-run the analysis at any time to get an updated breakdown after code changes.",
+          "score": 0.5070482036548454
+        },
+        {
+          "id": "/docs/guides/develop-mode#167",
+          "title": "Agentic Develop",
+          "url": "https://docs.rock8.cloud/docs/guides/develop-mode",
+          "heading": "",
+          "text": "Not every repo is ready to run. Maybe it has no Dockerfile yet, or you just want an agent to work through it first. **Agentic Develop** brings the code into Rock8Cloud so agents can start on it, and deploys it the moment it can actually be built.\n\nThere is nothing to remember and nothing to switch on later. The rule is simply: &#x2A;*if the repo has a Dockerfile, it deploys. If it does not, it waits.**\n\n***",
+          "score": 0.40321984760544716
+        },
+        {
+          "id": "/docs/guides/develop-mode#169",
+          "title": "Agentic Develop",
+          "url": "https://docs.rock8.cloud/docs/guides/develop-mode",
+          "heading": "What Happens to Your Repo",
+          "text": "| Your repo        | What Rock8Cloud does                                               |\n| ---------------- | ------------------------------------------------------------------ |\n| Has a Dockerfile | Creates the service and deploys it, same as always                 |\n| No Dockerfile    | Creates the service and stops there. Nothing is built, no pods run |\n\nA service waiting on a Dockerfile shows an empty **Deployments** tab. Nothing is built and no pods run for it, so it burns no build minutes. Its allocation does still count against your plan's resource pool from the moment it is created, so sleep, shrink or delete one you are no longer working on. See [Plans and usage](/docs/plans-and-usage).\n\n<Callout type=\"info\">\n  **Blueprints always deploy in full.** A blueprint ships with working Dockerfiles, so picking one under Agentic Develop provisions everything that blueprint defines - its code, and whatever database or storage slots it comes with - exactly as **Deploy and Develop** would. Some are code only, such as Vue. You still get the agents, you just also get a running stack.\n</Callout>\n\n***",
+          "score": 0.4015079680012159
+        },
+        {
+          "id": "/docs/guides/develop-mode#170",
+          "title": "Agentic Develop",
+          "url": "https://docs.rock8.cloud/docs/guides/develop-mode",
+          "heading": "Working on It",
+          "text": "Everything that needs only the repository works right away:\n\n* **[Agents](/docs/guides/agents)** - coding and research sessions in a cloud sandbox. A coder session edits a checkout, pushes a branch and opens a pull request, exactly as it does on a deployed service.\n* **Custom agents** and **agent workflows**\n* **[Code reviews](/docs/guides/code-reviews)** on pull requests\n* **Instructions** - the standing rules your agents follow on this service\n* **[Environment variables](/docs/guides/environment-variables)** and build settings, so the first deploy is right when it comes\n\n***",
+          "score": 0.3887113936551696
+        }
+      ],
+      "confidence": 0.48247029852714257,
+      "topScore": 0.5070482036548454
+    },
+    "date-format": {
+      "query": "Deployment timestamps show in US date format. Deployment times read 03/09/2026, which everyone here reads as 3 September when it means 9 March. Please use the local format.",
+      "snippets": [
+        {
+          "id": "/docs/first-deployment#117",
+          "title": "Your First Deployment",
+          "url": "https://docs.rock8.cloud/docs/first-deployment",
+          "heading": "Viewing Logs",
+          "text": "Need to debug? Click on any deployment to view:\n\n* **Build logs**: What happened during the Docker build\n* **Container logs**: Output from your running application\n\n***",
+          "score": 0.3471960879942565
+        },
+        {
+          "id": "/docs/databases-and-storage/postgresql#68",
+          "title": "PostgreSQL",
+          "url": "https://docs.rock8.cloud/docs/databases-and-storage/postgresql",
+          "heading": "Logs and History",
+          "text": "A database service has three tabs of its own:\n\n* **Logs** - live runtime logs streamed from the database pods. Click **Start Logs** to stream, scroll up to load older lines, and use copy or export to pull them out\n* **History** - every deployment of this database with its status, version, storage size, and replica count. The current one is highlighted at the top\n* **Resources** - replicas and the CPU / memory allocation drawn from your plan's pool, with the pool meters and a shortcut to buy more. Changes apply right away\n\nUse History to see when a version or storage change actually landed.\n\n***",
+          "score": 0.3402941239754025
+        },
+        {
+          "id": "/docs/guides/notifications#217",
+          "title": "Notifications",
+          "url": "https://docs.rock8.cloud/docs/guides/notifications",
+          "heading": "Supported Events",
+          "text": "| Event                            | Description                                                           |\n| -------------------------------- | --------------------------------------------------------------------- |\n| Deployment Started               | When a deployment begins building                                     |\n| Deployment Success               | When a deployment completes successfully                              |\n| Deployment Failed                | When a deployment fails                                               |\n| Deployment Rollback              | When a deployment is rolled back                                      |\n| Preview Created                  | When a PR preview environment is ready                                |\n| Preview Cleanup                  | When a PR preview is removed                                          |\n| Code Review Completed            | When an AI code review finishes successfully                          |\n| Code Review Failed               | When an AI code review encounters an error                            |\n| Dependency Vulnerabilities Found | When the dependency scan blocks a build with critical vulnerabilities |",
+          "score": 0.33563793393815344
+        },
+        {
+          "id": "/docs/guides/notifications#219",
+          "title": "Notifications",
+          "url": "https://docs.rock8.cloud/docs/guides/notifications",
+          "heading": "Setting Up Slack",
+          "text": "deployment starts, Rock8Cloud sends a \"Deployment Started\" message to your channel\n2. When the deployment completes, the success or failure message is posted as a **reply in the same thread**\n3. An emoji reaction is added to the original \"Deployment Started\" message:\n   * :white\\_check\\_mark: for successful deployments\n   * :x: for failed deployments\n\nThis keeps your channel organized and makes it easy to see deployment status at a glance.\n\n**Preview environments:** PR preview notifications also use threading. All messages related to a single pull request (preview created, deployments, cleanup) are grouped in one thread.\n\n**Multiple channels:** If you have multiple Slack channels configured for the same project, each channel maintains its own independent threads.",
+          "score": 0.33062478652290395
+        }
+      ],
+      "confidence": 0.34456873152828327,
+      "topScore": 0.3471960879942565
+    },
+    "csv-export": {
+      "query": "Cannot export the metrics table. There is no way to get the metrics table out of the product. A CSV download would do.",
+      "snippets": [
+        {
+          "id": "/docs/databases-and-storage/pgweb#62",
+          "title": "pgweb",
+          "url": "https://docs.rock8.cloud/docs/databases-and-storage/pgweb",
+          "heading": "What You Can Do",
+          "text": "| Tab                           | What it shows                                   |\n| ----------------------------- | ----------------------------------------------- |\n| **Rows**                      | Table data, with filtering                      |\n| **Structure**                 | Columns, types and defaults                     |\n| **Indexes** / **Constraints** | Table indexes and constraints                   |\n| **Query**                     | A SQL editor, with **Explain Query** for a plan |\n| **History**                   | Statements run in this session                  |\n| **Activity**                  | What the database is doing right now            |\n| **Connection**                | The connection pgweb is using                   |\n\nResult sets export as JSON, CSV or XML.\n\n***",
+          "score": 0.3619762433638771
+        },
+        {
+          "id": "/docs/guides/mcp-integration#203",
+          "title": "MCP Integration",
+          "url": "https://docs.rock8.cloud/docs/guides/mcp-integration",
+          "heading": "Available Tools",
+          "text": "|\n| `get_deployment_status`      | Get the current status of a deployment, including its dependency vulnerability scan results                                    |\n| `get_latest_build`           | Get the latest deployment and build job status for a service environment (`stable` or `preview`)                               |\n| `get_build_logs`             | Retrieve orchestration build logs for a deployment                                                                             |\n| `get_build_logs_by_build_id` | Same as `get_build_logs` but takes a `buildJobId` directly                                                                     |\n| `get_runtime_logs`           | Retrieve historical runtime logs for any deployment (live or past)                                                             |\n| `get_deployment_metrics`     | Summarize a deployment's CPU and memory usage (avg, p95, max vs limit, OOM kills) over 1h, 6h or 24h                           |\n| `get_resource_pool`          | Show the organization's CPU/memory pool, free headroom, allocation steps and per-replica maximums                              |\n| `set_service_resources`      | Change a service's per-replica CPU and memory allocation (requires confirmation)                                               |\n| `list_linkable_keys`         | List the env var keys a service exports for linking (e.g. database credentials)                                                |\n| `get_env_vars`               | Get env vars of a service's stable environment (manual values masked)                                                          |\n| `link_env_vars`              | Link env vars from a source service (e.g. a database) into another service",
+          "score": 0.2982295067733034
+        },
+        {
+          "id": "/docs/guides/bug-reports#148",
+          "title": "Bug Reports & Bounty",
+          "url": "https://docs.rock8.cloud/docs/guides/bug-reports",
+          "heading": "Keeping a Report Private",
+          "text": "Check **Hide this report from the bug bounty leaderboard** in the dialog. The report still reaches the team, it just does not appear publicly and does not score points. Use it when a screenshot or description contains something you would rather not publish.",
+          "score": 0.26646334053188925
+        },
+        {
+          "id": "/docs/blueprint#8",
+          "title": "Blueprints",
+          "url": "https://docs.rock8.cloud/docs/blueprint",
+          "heading": "Java (Maven + PostgreSQL)",
+          "text": "REST API backend built with **Java 21**, **Spring Boot 3.4.1**, and **PostgreSQL**. One table, one API endpoint, Swagger UI, full Docker support out of the box.\n\n| Layer      | Technology                         |\n| ---------- | ---------------------------------- |\n| Language   | Java 21                            |\n| Framework  | Spring Boot 3.4.1                  |\n| Build      | Maven 3.9                          |\n| Migrations | Flyway                             |\n| ORM        | Spring Data JPA / Hibernate        |\n| API docs   | springdoc-openapi 2.7 (Swagger UI) |\n\n[View full details →](/docs/blueprints/java-maven-postgres)  ·  <a href=\"https://github.com/rock8-cloud/template-java\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub →</a>\n\n***",
+          "score": 0.2468902511237563
+        }
+      ],
+      "confidence": 0.34140032098917594,
+      "topScore": 0.3619762433638771
+    },
+    "vague-slowness": {
+      "query": "Everything is slow sometimes. The dashboard takes ages to load. Not always. It was fine last week. Maybe since the update?",
+      "snippets": [
+        {
+          "id": "/docs/blueprint#6",
+          "title": "Blueprints",
+          "url": "https://docs.rock8.cloud/docs/blueprint",
+          "heading": "Elysia + TanStack Dashboard",
+          "text": "Authenticated dashboard starter, typed end to end. Elysia API on Bun plus a TanStack Start web app on PostgreSQL, in one monorepo, with a seeded demo login.\n\n| Layer       | Technology                                              |\n| ----------- | ------------------------------------------------------- |\n| API         | Elysia on Bun (port 3001)                               |\n| Web         | TanStack Start + TanStack Query + shadcn/ui (port 3000) |\n| Auth        | better-auth cookie sessions                             |\n| Database    | PostgreSQL + Drizzle ORM                                |\n| Type safety | Eden, the web app imports the API type                  |\n\n[View full details →](/docs/blueprints/elysia-tanstack-dashboard)  ·  <a href=\"https://github.com/rock8-cloud/elysia-tanstack-dashboard-monorepo\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub →</a>\n\n***",
+          "score": 0.30307698792162585
+        },
+        {
+          "id": "/docs/guides/jira-integration#195",
+          "title": "Jira Integration",
+          "url": "https://docs.rock8.cloud/docs/guides/jira-integration",
+          "heading": "Troubleshooting",
+          "text": "**The pairing link says it cannot be used.** Links last 15 minutes and work once. Go back to the Rock8Cloud page in Jira and click **Pair with Rock8Cloud** again. After 10 dead links or wrong codes, your whole organization waits up to 15 minutes before pairing accepts another attempt.\n\n**The dialog says this Jira site is already connected.** The organization picked in the dialog already works with that site, so there is nothing to add and its projects are mappable under **Settings** → **Integrations** → **Jira** already. Pick a different organization in the same dialog, or cancel.\n\n**Rock8Cloud says the project is already mapped, but it is not in my list.** Another organization on the same Jira site mapped that project. A project belongs to one organization. Your Jira site admin can see which organizations are connected on the Rock8Cloud page in Jira.\n\n**Nothing happens when I assign the work item.** The project is not mapped, its mapping is **Paused**, or the mapped service has no repository attached. The Agents panel says which, and names the page that fixes it. Once it is fixed, reply \"try again\" in the panel and Rock8Cloud picks the work item back up, as long as you do it within a day. After that, assign the work item again. The Rock8Cloud page in Jira also lists the projects that are actually mapped.\n\n**Rock8Cloud asks which repository every time.** The project is mapped to more than one and the work item's **Repository** field is empty. It is per work item, so a new ticket starts empty. Answering by reply saves it to the field, unless the field is missing from the project's screens - then the answer starts the run but cannot be stored, so the next work item asks again.\n\n**There is no Repository field on my work items.** The project is company-managed and a Jira ad",
+          "score": 0.2998512438367351
+        },
+        {
+          "id": "/docs/databases-and-storage/dragonfly#56",
+          "title": "Dragonfly",
+          "url": "https://docs.rock8.cloud/docs/databases-and-storage/dragonfly",
+          "heading": "Logs and History",
+          "text": "A Dragonfly service has three tabs of its own:\n\n* **Logs** - live runtime logs streamed from the database pods. Click **Start Logs** to stream, scroll up to load older lines, and use copy or export to pull them out\n* **History** - every deployment of this service with its status, version, storage size, and replica count. The current one is highlighted at the top\n* **Resources** - replicas and the CPU / memory allocation drawn from your plan's pool, with the pool meters and a shortcut to buy more. Changes apply right away. Dragonfly keeps its data in memory, so a memory change restarts the datastore and clears it - the page asks you to confirm\n\n***",
+          "score": 0.2973529597860525
+        },
+        {
+          "id": "/docs/guides/bug-reports#145",
+          "title": "Bug Reports & Bounty",
+          "url": "https://docs.rock8.cloud/docs/guides/bug-reports",
+          "heading": "Reporting a Bug",
+          "text": "1. Click **Bug bounty hunt** in the top bar\n2. Choose **Report a bug**\n3. Describe what you were trying to do and what happened\n4. Optionally attach a screenshot (up to 5 MB)\n5. Click **Submit**\n\nThe more specific the description, the faster it gets triaged. \"Deploy button does nothing on the preview environment of service X\" beats \"deploys broken\".\n\n### What gets attached automatically [#what-gets-attached-automatically]\n\nYou do not need to collect diagnostics. Every report also carries:\n\n* The page you were on and the full URL\n* Browser, viewport size, and the app version you were running\n* A snapshot of the data the app had loaded at that moment, as `debug-data.json`\n* A session replay link, so the team can see the steps that led to it\n\nThis is why a one-line description is usually enough.",
+          "score": 0.2954939538902599
+        }
+      ],
+      "confidence": 0.3018370274527386,
+      "topScore": 0.30307698792162585
+    },
+    "wide-refactor": {
+      "query": "Error messages are inconsistent across the API. Some endpoints return {error: \"...\"} and others {message: \"...\"}. Our client has to handle both.",
+      "snippets": [
+        {
+          "id": "/docs/blueprints/nextjs#41",
+          "title": "Next.js (API + Swagger) - Blueprint",
+          "url": "https://docs.rock8.cloud/docs/blueprints/nextjs",
+          "heading": "Project Structure",
+          "text": "migration files at runtime after build.\n* To add a new endpoint: create a `route.ts` under `app/api/`, query via the pool from `lib/db.ts`, and update the OpenAPI spec in `app/api/openapi.json/route.ts`.\n\n***",
+          "score": 0.3122981720938127
+        },
+        {
+          "id": "/docs/blueprints/nextjs-react#36",
+          "title": "Next.js + React - Blueprint",
+          "url": "https://docs.rock8.cloud/docs/blueprints/nextjs-react",
+          "heading": "Project Structure",
+          "text": "```\napp/\n├── page.tsx                         # React client component: fetches API, renders table\n├── layout.tsx                       # Root layout\n└── api/\n    ├── targets/route.ts             # GET /api/targets\n    └── info/route.ts                # GET /api/info\n\nlib/\n├── db.ts                            # pg Pool (DATABASE_URL or DB_*), sslmode handling\n└── migrate.ts                       # Reads and runs SQL files from db/migrations/\n\ndb/migrations/\n└── V1__init.sql                     # Creates space_target table + seed data\n\ninstrumentation.ts                   # Next.js hook: runs migrations on server startup\nnext.config.ts                       # output: 'standalone' for Docker\n```\n\n**Key design decisions:**\n\n* `app/page.tsx` is a `'use client'` component: it runs in the browser, calls `/api/info` and `/api/targets` via `fetch`, and renders the table once both requests succeed. The connection indicator dot reflects the fetch status.\n* `lib/db.ts` strips `sslmode` from the connection string before passing it to `pg` because pg v8+ treats `sslmode=require` as `verify-full` (rejecting self-signed certs). SSL is instead controlled via the `ssl` object, with `rejectUnauthorized: false` for cloud-managed databases.\n* Migrations run via Next.js `instrumentation.ts`, called once when the Node.js server starts.\n* `next.config.ts` sets `output: 'standalone'` for minimal Docker images. The `db/` directory is copied separately in the Dockerfile because `instrumentation.ts` needs the migration files at runtime.\n* To add a new endpoint: create a `route.ts` under `app/api/` and query via the pool from `lib/db.ts`. Update `app/page.tsx` to display the new data.\n\n***",
+          "score": 0.28581760285022684
+        },
+        {
+          "id": "/docs/databases-and-storage/s3-storage#81",
+          "title": "S3 Object Storage",
+          "url": "https://docs.rock8.cloud/docs/databases-and-storage/s3-storage",
+          "heading": "Troubleshooting",
+          "text": "### Access denied [#access-denied]\n\n* Verify `S3_ACCESS_KEY` and `S3_SECRET_KEY` are correctly set\n* Ensure the bucket name matches `S3_BUCKET`\n\n### Connection issues [#connection-issues]\n\n* Use the **internal endpoint** for service-to-service access within your project\n* Use the **external URL** for access from outside your project\n* Ensure `forcePathStyle: true` is set in your client configuration\n\n### Region errors [#region-errors]\n\n* The `S3_REGION` environment variable is set automatically - don't hardcode a region value\n* If you see region-related errors, make sure `S3_REGION` is included in your service's environment variables\n\n### Public URL returns `NoSuchKey` / 404 [#public-url-returns-nosuchkey--404]\n\nThe bucket was matched but the requested key isn't there. Almost always caused by uploading with path-style addressing - files end up under a `<bucket-name>/` prefix instead of at the root.\n\nCheck with `aws s3 ls s3://$S3_BUCKET/` (use virtual-hosted addressing, see [Uploading Files for Public Access](#uploading-files-for-public-access)). If you see your files under a folder matching the bucket name, re-upload after configuring `addressing_style = virtual`.\n\n***",
+          "score": 0.2839501622926881
+        },
+        {
+          "id": "/docs/blueprints/nextjs#40",
+          "title": "Next.js (API + Swagger) - Blueprint",
+          "url": "https://docs.rock8.cloud/docs/blueprints/nextjs",
+          "heading": "Project Structure",
+          "text": "```\napp/\n├── page.tsx                         # Redirects / → /swagger\n├── swagger/\n│   └── page.tsx                     # Swagger UI (client component, loads /api/openapi.json)\n└── api/\n    ├── targets/route.ts             # GET /api/targets\n    ├── info/route.ts                # GET /api/info\n    └── openapi.json/route.ts        # GET /api/openapi.json - serves the OpenAPI spec\n\nlib/\n├── db.ts                            # pg Pool (DATABASE_URL or DB_*)\n└── migrate.ts                       # Reads and runs SQL files from db/migrations/\n\ndb/migrations/\n└── V1__init.sql                     # Creates space_target table + seed data\n\ninstrumentation.ts                   # Next.js hook: runs migrations on server startup\nnext.config.ts                       # output: 'standalone' for Docker\n```\n\n**Key design decisions:**\n\n* `lib/db.ts` creates a single `pg.Pool` that is reused across requests. It reads `DATABASE_URL` first and falls back to individual `DB_*` variables. SSL is enabled when `sslmode=require` appears in the URL or when `DB_SSL_MODE=require` is set.\n* Migrations run via Next.js `instrumentation.ts`, which is called once when the Node.js server starts. This keeps migration logic out of request handlers.\n* The OpenAPI spec in `app/api/openapi.json/route.ts` is hand-authored. The Swagger UI page loads it dynamically to avoid SSR issues with `swagger-ui-react`.\n* `next.config.ts` sets `output: 'standalone'` so the Dockerfile can copy only the minimal runtime output (`/app/.next/standalone`). The `db/` directory is copied separately because `instrumentation.ts` needs the migration files at runtime after build.\n* To add a new endpoint: create a `route.ts` under `app/api/`, query via the pool from `lib/db.ts`, and update the OpenAPI spec in `app/api/openapi.json/route.t",
+          "score": 0.2725975672160029
+        }
+      ],
+      "confidence": 0.3052084832996237,
+      "topScore": 0.3122981720938127
+    },
+    "preview-expiry": {
+      "query": "Preview deployments disappear after a few days. I opened a preview URL from a PR I made last week and it 404s now. It worked when the PR was open.",
+      "snippets": [
+        {
+          "id": "/docs/guides/preview-deployments#227",
+          "title": "Preview Deployments",
+          "url": "https://docs.rock8.cloud/docs/guides/preview-deployments",
+          "heading": "Cleanup",
+          "text": "Previews are automatically removed when the pull request is closed or merged. No manual cleanup needed.\n\n### Deleting a preview manually [#deleting-a-preview-manually]\n\nYou can remove a preview before its pull request is closed, for example to free up capacity:\n\n1. Select the preview environment (**PR #123** in the service sidebar)\n2. Open the **Overview** tab\n3. Open the actions menu in the header bar and choose **Delete environment**\n\nThe preview stops running and its URL goes away. The pull request itself is untouched, so pushing another commit to it creates the preview again.",
+          "score": 0.6384068247905321
+        },
+        {
+          "id": "/docs/faq#102",
+          "title": "Frequently Asked Questions",
+          "url": "https://docs.rock8.cloud/docs/faq",
+          "heading": "Preview Deployments",
+          "text": "### What are preview deployments? [#what-are-preview-deployments]\n\nTemporary deployments for pull requests. Each PR gets its own URL:\n\n```\nhttps://your-service-pr123.apps.rock8.cloud\n```\n\nGreat for testing changes before merging!\n\n### How do I enable preview deployments? [#how-do-i-enable-preview-deployments]\n\n1. Go to your service's **Workflows** tab\n2. Enable the **Preview Deployments** workflow (enabled by default)\n3. Configure source branch patterns if needed (defaults to `feat/*`)\n\nNew PRs matching your branch patterns will automatically deploy.\n\n### Do preview deployments use the same database? [#do-preview-deployments-use-the-same-database]\n\nYes, preview deployments use the same environment variables as your main deployment, including database connections.\n\nIf you need separation, create a separate project or service with its own database for preview/staging purposes.\n\n### When are previews deleted? [#when-are-previews-deleted]\n\nAutomatically when you:\n\n* Close the pull request\n* Merge the pull request\n\nNo manual cleanup needed!\n\n***",
+          "score": 0.6286000574216765
+        },
+        {
+          "id": "/docs/guides/preview-deployments#223",
+          "title": "Preview Deployments",
+          "url": "https://docs.rock8.cloud/docs/guides/preview-deployments",
+          "heading": "How It Works",
+          "text": "1. You open a pull request on GitHub\n2. Rock8Cloud builds and deploys a preview environment\n3. A preview URL is available (e.g., `https://your-service-pr123.apps.rock8.cloud`)\n4. Push more commits → the preview updates automatically\n5. Close or merge the PR → the preview is cleaned up, or delete it yourself at any time",
+          "score": 0.6016194255032454
+        },
+        {
+          "id": "/docs/guides/preview-deployments#228",
+          "title": "Preview Deployments",
+          "url": "https://docs.rock8.cloud/docs/guides/preview-deployments",
+          "heading": "Troubleshooting",
+          "text": "| Problem                                     | Solution                                                      |\n| ------------------------------------------- | ------------------------------------------------------------- |\n| No preview created                          | Check the workflow is enabled and branch patterns match       |\n| Preview waiting for pod capacity            | It starts automatically when capacity is available            |\n| Preview waiting because service is sleeping | Wake the service to resume the pending preview                |\n| Preview not updating                        | Verify new commits triggered a `synchronize` event            |\n| Preview not removed                         | Delete it manually from **Overview** → **Delete environment** |",
+          "score": 0.5701366658682343
+        }
+      ],
+      "confidence": 0.6297920003721491,
+      "topScore": 0.6384068247905321
+    },
+    "env-not-inherited": {
+      "query": "Environment variables are not shared between services. I set DATABASE_URL on one service and another service in the same project cannot see it. Surely they should share?",
+      "snippets": [
+        {
+          "id": "/docs/guides/environment-variables#180",
+          "title": "Environment Variables",
+          "url": "https://docs.rock8.cloud/docs/guides/environment-variables",
+          "heading": "Linked Variables",
+          "text": "Link environment variables from other services in your project - databases, S3 storage, or other application services. Linked variables are resolved securely at deploy time.\n\n1. In the environment variables section, select a **source service** from the dropdown\n2. Choose which **variable** to link (e.g., `HOST`, `PASSWORD`, `URL`)\n3. Rock8Cloud injects the value automatically when your service deploys\n\nCredentials like database passwords and S3 secret keys are stored as secrets and never exposed as plain text - they're injected directly into your running container at deploy time.\n\nWhen you link a variable that depends on other variables (e.g., `URL` depends on `HOST`, `PORT`, `USER`, `PASSWORD`, `NAME`), the dependencies are automatically included.",
+          "score": 0.5585756169119844
+        },
+        {
+          "id": "/docs/databases-and-storage/postgresql#67",
+          "title": "PostgreSQL",
+          "url": "https://docs.rock8.cloud/docs/databases-and-storage/postgresql",
+          "heading": "Environment Variables",
+          "text": "After creation, Rock8Cloud exposes these variables for your application to connect:\n\n| Variable   | Description         | Example                                  |\n| ---------- | ------------------- | ---------------------------------------- |\n| `HOST`     | Database hostname   | *(auto-generated)*                       |\n| `PORT`     | Database port       | `5432`                                   |\n| `NAME`     | Database name       | `postgres-main`                          |\n| `USER`     | Username            | `app`                                    |\n| `PASSWORD` | Password            | *(auto-generated)*                       |\n| `URL`      | Full connection URL | `postgresql://app:pass@host:5432/dbname` |\n\n### Linking to Your Application [#linking-to-your-application]\n\n1. Go to your application service → **Deployments** → **Env Vars**\n2. Add the database variables using the names expected by your framework\n\n**Common framework patterns:**\n\n```bash\n# Node.js / Prisma / Drizzle\nDATABASE_URL=<URL>\n\n# Django\nDATABASE_HOST=<HOST>\nDATABASE_PORT=<PORT>\nDATABASE_NAME=<NAME>\nDATABASE_USER=<USER>\nDATABASE_PASSWORD=<PASSWORD>\n\n# Rails\nDATABASE_URL=<URL>\n```\n\nAfter saving, your application automatically redeploys with the new configuration.\n\n***",
+          "score": 0.49699246016330645
+        },
+        {
+          "id": "/docs/guides/environment-variables#181",
+          "title": "Environment Variables",
+          "url": "https://docs.rock8.cloud/docs/guides/environment-variables",
+          "heading": "Preview Environments",
+          "text": "Preview deployments use the **same environment variables** as your stable deployment. If you need isolation, create a separate project with its own database and credentials.",
+          "score": 0.4961177024815211
+        },
+        {
+          "id": "/docs/blueprints/nextjs#42",
+          "title": "Next.js (API + Swagger) - Blueprint",
+          "url": "https://docs.rock8.cloud/docs/blueprints/nextjs",
+          "heading": "Environment Variables",
+          "text": "The application runs on port **3000** and requires a PostgreSQL database.\n\nDatabase connection is configured via **one of two approaches**:\n\n### Option A - Single connection URL (recommended for managed services) [#option-a---single-connection-url-recommended-for-managed-services]\n\n| Variable       | Required | Example                                                 |\n| -------------- | -------- | ------------------------------------------------------- |\n| `DATABASE_URL` | yes      | `postgres://user:pass@host:5432/dbname?sslmode=require` |\n\n### Option B - Individual variables [#option-b---individual-variables]\n\n| Variable      | Required | Default     | Description                    |\n| ------------- | -------- | ----------- | ------------------------------ |\n| `DB_HOST`     | no       | `localhost` | Database host                  |\n| `DB_PORT`     | no       | `5432`      | Database port                  |\n| `DB_NAME`     | no       | `spacedb`   | Database name                  |\n| `DB_USER`     | no       | `postgres`  | Database user                  |\n| `DB_PASSWORD` | no       | `postgres`  | Database password              |\n| `DB_SSL_MODE` | no       | *(none)*    | Set to `require` to enable SSL |\n\n`DATABASE_URL` takes precedence. If it is set, the individual `DB_*` variables are ignored.\n\n***",
+          "score": 0.4825970638091559
+        }
+      ],
+      "confidence": 0.5435741450908367,
+      "topScore": 0.5585756169119844
+    },
+    "work-already-done": {
+      "query": "Long project names overflow the sidebar. A project named \"production-eu-west-analytics-pipeline\" runs past the edge of the sidebar and covers the settings icon. Shorter names are fine.",
+      "snippets": [
+        {
+          "id": "/docs/blueprints/elysia-tanstack-dashboard#17",
+          "title": "Elysia + TanStack Dashboard - Blueprint",
+          "url": "https://docs.rock8.cloud/docs/blueprints/elysia-tanstack-dashboard",
+          "heading": "",
+          "text": "An opinionated starter for authenticated web products, built with [Elysia](https://elysiajs.com/) on [Bun](https://bun.sh/) and [TanStack Start](https://tanstack.com/start), managed as a [Turborepo](https://turborepo.dev/) monorepo. One repository, two services, one database.\n\n**Tech stack:**\n\n| Layer       | Technology                                                                                                         |\n| ----------- | ------------------------------------------------------------------------------------------------------------------ |\n| API         | Elysia on Bun, port 3001                                                                                           |\n| Type safety | [Eden](https://elysiajs.com/eden/overview) - the web app imports the API *type*, no codegen, no shared DTO package |\n| Auth        | [better-auth](https://better-auth.com/) cookie sessions, email and password, OIDC-ready                            |\n| Database    | PostgreSQL + [Drizzle ORM](https://orm.drizzle.team/)                                                              |\n| Web         | TanStack Start + TanStack Query + [shadcn/ui](https://ui.shadcn.com/) on Base UI, port 3000                        |\n\n<a href=\"https://github.com/rock8-cloud/elysia-tanstack-dashboard-monorepo\" target=\"_blank\" rel=\"noopener noreferrer\">\n  View on GitHub →\n</a>\n\n***",
+          "score": 0.37620431108450814
+        },
+        {
+          "id": "/docs/first-deployment#113",
+          "title": "Your First Deployment",
+          "url": "https://docs.rock8.cloud/docs/first-deployment",
+          "heading": "Step 5: Configure Your Deployment",
+          "text": "Rock8Cloud generates sensible defaults, but you can customize:\n\n* **Project Name** - Groups your services together\n* **App Name** - Name for this service\n* **URL** - Your app's public URL. The first part is yours to edit (or roll with ↻). You can attach your own domain later.\n\n***",
+          "score": 0.37095710311456354
+        },
+        {
+          "id": "/docs/blueprint#6",
+          "title": "Blueprints",
+          "url": "https://docs.rock8.cloud/docs/blueprint",
+          "heading": "Elysia + TanStack Dashboard",
+          "text": "Authenticated dashboard starter, typed end to end. Elysia API on Bun plus a TanStack Start web app on PostgreSQL, in one monorepo, with a seeded demo login.\n\n| Layer       | Technology                                              |\n| ----------- | ------------------------------------------------------- |\n| API         | Elysia on Bun (port 3001)                               |\n| Web         | TanStack Start + TanStack Query + shadcn/ui (port 3000) |\n| Auth        | better-auth cookie sessions                             |\n| Database    | PostgreSQL + Drizzle ORM                                |\n| Type safety | Eden, the web app imports the API type                  |\n\n[View full details →](/docs/blueprints/elysia-tanstack-dashboard)  ·  <a href=\"https://github.com/rock8-cloud/elysia-tanstack-dashboard-monorepo\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub →</a>\n\n***",
+          "score": 0.36224642149663544
+        },
+        {
+          "id": "/docs/blueprints/strapi-nextjs#44",
+          "title": "Strapi + Next.js - Blueprint",
+          "url": "https://docs.rock8.cloud/docs/blueprints/strapi-nextjs",
+          "heading": "",
+          "text": "A content website built with [Strapi 5](https://strapi.io/) and [Next.js 16](https://nextjs.org/), managed as a [Turborepo](https://turborepo.dev/) monorepo. One repository, two services, a database, and a media bucket, all wired up on deploy.\n\n**Tech stack:**\n\n| Layer    | Technology                                                     |\n| -------- | -------------------------------------------------------------- |\n| CMS      | Strapi 5 (TypeScript), port 1337                               |\n| Frontend | Next.js 16 App Router, Turbopack, standalone output, port 3000 |\n| Styling  | Tailwind v4 + shadcn/ui                                        |\n| Database | PostgreSQL via `DATABASE_URL`                                  |\n| Media    | S3-compatible object storage                                   |\n\nContent model: a `Page` collection with dynamic-zone blocks, plus `Navbar` and `Footer` single types.\n\n<a href=\"https://github.com/rock8-cloud/strapi-next-turborepo-starter\" target=\"_blank\" rel=\"noopener noreferrer\">\n  View on GitHub →\n</a>\n\n***",
+          "score": 0.34019360498461904
+        }
+      ],
+      "confidence": 0.37206312581018014,
+      "topScore": 0.37620431108450814
+    },
+    "silent-on-consequences": {
+      "query": "Deleted services still appear in the project switcher. I deleted a service two days ago and it is still listed in the switcher dropdown until I hard refresh.",
+      "snippets": [
+        {
+          "id": "/docs/databases-and-storage/s3-storage#80",
+          "title": "S3 Object Storage",
+          "url": "https://docs.rock8.cloud/docs/databases-and-storage/s3-storage",
+          "heading": "Deleting an S3 Service",
+          "text": "1. Go to your project\n2. Select the S3 service\n3. Click **Delete**\n4. Confirm the deletion\n\nDeleting an S3 service removes the storage and all stored data permanently.\n\n***",
+          "score": 0.4263399674470918
+        },
+        {
+          "id": "/docs/guides/preview-deployments#227",
+          "title": "Preview Deployments",
+          "url": "https://docs.rock8.cloud/docs/guides/preview-deployments",
+          "heading": "Cleanup",
+          "text": "Previews are automatically removed when the pull request is closed or merged. No manual cleanup needed.\n\n### Deleting a preview manually [#deleting-a-preview-manually]\n\nYou can remove a preview before its pull request is closed, for example to free up capacity:\n\n1. Select the preview environment (**PR #123** in the service sidebar)\n2. Open the **Overview** tab\n3. Open the actions menu in the header bar and choose **Delete environment**\n\nThe preview stops running and its URL goes away. The pull request itself is untouched, so pushing another commit to it creates the preview again.",
+          "score": 0.3812810468164559
+        },
+        {
+          "id": "/docs/guides/preview-deployments#228",
+          "title": "Preview Deployments",
+          "url": "https://docs.rock8.cloud/docs/guides/preview-deployments",
+          "heading": "Troubleshooting",
+          "text": "| Problem                                     | Solution                                                      |\n| ------------------------------------------- | ------------------------------------------------------------- |\n| No preview created                          | Check the workflow is enabled and branch patterns match       |\n| Preview waiting for pod capacity            | It starts automatically when capacity is available            |\n| Preview waiting because service is sleeping | Wake the service to resume the pending preview                |\n| Preview not updating                        | Verify new commits triggered a `synchronize` event            |\n| Preview not removed                         | Delete it manually from **Overview** → **Delete environment** |",
+          "score": 0.37144465774296354
+        },
+        {
+          "id": "/docs/guides/teams-and-organizations#248",
+          "title": "Teams and Organizations",
+          "url": "https://docs.rock8.cloud/docs/guides/teams-and-organizations",
+          "heading": "Delete an Organization",
+          "text": "Only **owners** can delete an organization.\n\n1. Go to **Settings** → **Organization**\n2. Click **Delete Organization**\n3. Confirm the deletion\n\nThis removes all projects, services, and associated resources permanently.",
+          "score": 0.34729061322318056
+        }
+      ],
+      "confidence": 0.41291469860519114,
+      "topScore": 0.4263399674470918
+    }
+  }
+}

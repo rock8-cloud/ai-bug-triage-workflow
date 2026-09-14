@@ -1,0 +1,34 @@
+{
+  "name": "supporter-bugtriage",
+  "private": true,
+  "packageManager": "bun@1.3.14",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "db:reset": "docker compose down -v && docker compose up -d --wait",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "docs:index": "bun run --cwd apps/server docs:index",
+    "report": "bun run --cwd apps/server report",
+    "policy": "bun run --cwd apps/server policy",
+    "models": "bun run --cwd apps/server models",
+    "rock8cloud": "bun run --cwd apps/server rock8cloud",
+    "eval": "bun run --cwd apps/server eval",
+    "eval:studio": "bun run --cwd apps/server eval:studio",
+    "eval:compare": "bun run --cwd apps/server eval:compare",
+    "eval:freeze": "bun run --cwd apps/server eval:freeze",
+    "eval:promote": "bun run --cwd apps/server eval:promote",
+    "check": "turbo run check",
+    "dev:web": "turbo run dev --filter=@bugtriage/web",
+    "dev:server": "turbo run dev --filter=@bugtriage/server",
+    "dev:studio": "turbo run dev --filter=@bugtriage/studio"
+  },
+  "devDependencies": {
+    "turbo": "^2.9.18",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.output/
+.vinxi/
+.mastra/
+.turbo/
+.env
+.env.local
+.DS_Store
+src/routeTree.gen.ts
+docs/
+apps/web/.tanstack/tmp/

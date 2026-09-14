@@ -1,0 +1,40 @@
+# One Postgres for everything Mastra touches: workflow run state (including
+# suspended runs), the ticket table, and the pgvector index the RAG lookup
+# queries. Ports are offset so this can run alongside the other stacks on this
+# machine.
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: bugtriage-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bugtriage
+      POSTGRES_PASSWORD: bugtriage
+      POSTGRES_DB: bugtriage
+    ports:
+      - '5489:5432'
+    volumes:
+      - bugtriage-pgdata:/var/lib/postgresql/data
+      - ./docker/init-pgvector.sql:/docker-entrypoint-initdb.d/00-pgvector.sql:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U bugtriage -d bugtriage']
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  # Not required to run the demo — but during the talk it is the quickest way
+  # to show that a suspended run really is sitting on disk, not in memory.
+  pgweb:
+    image: sosedoff/pgweb:latest
+    container_name: bugtriage-pgweb
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PGWEB_DATABASE_URL: postgres://bugtriage:bugtriage@postgres:5432/bugtriage?sslmode=disable
+    ports:
+      - '8087:8081'
+
+volumes:
+  bugtriage-pgdata:

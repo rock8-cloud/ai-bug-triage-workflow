@@ -1,0 +1,11 @@
+**/node_modules
+**/.turbo
+**/.mastra
+**/dist
+**/.output
+.git
+.env
+.env.local
+.data
+docker-compose.yml
+README.md

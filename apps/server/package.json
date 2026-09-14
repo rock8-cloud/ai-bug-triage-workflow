@@ -1,0 +1,48 @@
+{
+  "name": "@bugtriage/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schemas": "./src/schemas.ts"
+  },
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "node .mastra/output/index.mjs",
+    "check": "tsc --noEmit",
+    "models": "bun run src/scripts/models.ts",
+    "rock8cloud": "bun run src/scripts/rock8cloud.ts",
+    "eval": "bun run src/scripts/eval.ts",
+    "eval:freeze": "bun run src/scripts/eval-freeze.ts",
+    "eval:promote": "bun run src/scripts/eval-promote.ts",
+    "report": "bun run src/scripts/report.ts",
+    "policy": "bun run src/scripts/policy.ts",
+    "eval:studio": "bun run src/scripts/eval-experiment.ts",
+    "eval:compare": "bun run src/scripts/eval-compare.ts",
+    "docs:index": "bun run src/scripts/index-docs.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^3.0.31",
+    "@bugtriage/shared": "workspace:*",
+    "@chat-adapter/slack": "4.38.1",
+    "@mastra/core": "1.65.0",
+    "@mastra/loggers": "1.3.1",
+    "@mastra/memory": "1.29.0",
+    "@mastra/observability": "1.17.6",
+    "@mastra/pg": "1.23.0",
+    "@mastra/rag": "2.6.2",
+    "ai": "^7.0.68",
+    "chat": "4.38.1",
+    "pg": "^8.23.0",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^26.2.0",
+    "@types/pg": "^8.23.1",
+    "mastra": "1.28.0",
+    "typescript": "^6.0.3"
+  }
+}
