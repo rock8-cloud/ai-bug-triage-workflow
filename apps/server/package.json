@@ -32,7 +32,7 @@
     "@mastra/memory": "1.29.0",
     "@mastra/observability": "1.17.6",
     "@mastra/pg": "1.23.0",
-    "@mastra/rag": "2.6.2",
+    "@mastra/rag": "2.7.0",
     "ai": "^7.0.68",
     "chat": "4.38.1",
     "pg": "^8.23.0",
