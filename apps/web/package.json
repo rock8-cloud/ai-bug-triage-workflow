@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@bugtriage/shared": "workspace:*",
-    "@mastra/client-js": "1.44.0",
+    "@mastra/client-js": "1.56.0",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/markdown": "^0.0.13",
     "@tanstack/react-query": "^5.101.4",
