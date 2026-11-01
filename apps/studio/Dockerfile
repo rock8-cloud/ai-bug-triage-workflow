@@ -6,7 +6,7 @@
 # matches the other two images.
 #   docker build -f apps/studio/Dockerfile .
 
-FROM oven/bun:1.3.14-alpine AS build
+FROM oven/bun:1.4.4-alpine AS build
 WORKDIR /repo
 
 # Manifests first, so a code change reuses the install layer.
@@ -22,7 +22,7 @@ COPY apps/studio apps/studio
 # compiled; the point is to leave the other ~100 MB of CLI behind.
 RUN bun run --cwd apps/studio build
 
-FROM oven/bun:1.3.14-alpine AS runtime
+FROM oven/bun:1.4.4-alpine AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3001

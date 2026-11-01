@@ -2,7 +2,7 @@
 # runtime image is just the built bundle plus a listener — no node_modules.
 #   docker build -f apps/web/Dockerfile .
 
-FROM oven/bun:1.3.14-alpine AS build
+FROM oven/bun:1.4.4-alpine AS build
 WORKDIR /repo
 
 # Every workspace's manifest, not just this app's: bun.lock lists them all, and
@@ -22,7 +22,7 @@ COPY apps/web apps/web
 # `ssr.noExternal` makes the SSR handler self-contained.
 RUN cd apps/web && bunx vite build
 
-FROM oven/bun:1.3.14-alpine AS runtime
+FROM oven/bun:1.4.4-alpine AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3000
