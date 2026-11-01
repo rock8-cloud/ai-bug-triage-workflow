@@ -11,7 +11,7 @@
 # (arm64 happens to survive). Real node also matches the runtime stage exactly.
 
 FROM node:24-alpine AS build
-COPY --from=oven/bun:1.3.14-alpine /usr/local/bin/bun /usr/local/bin/bun
+COPY --from=oven/bun:1.4.4-alpine /usr/local/bin/bun /usr/local/bin/bun
 WORKDIR /repo
 
 # Manifests first, so a dependency-free code change reuses the install layer.
