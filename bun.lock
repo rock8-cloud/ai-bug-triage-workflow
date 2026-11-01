@@ -54,7 +54,7 @@
         "@bugtriage/shared": "workspace:*",
         "@mastra/client-js": "1.44.0",
         "@tailwindcss/vite": "^4.1.18",
-        "@tanstack/markdown": "^0.0.13",
+        "@tanstack/markdown": "^0.0.16",
         "@tanstack/react-query": "^5.101.4",
         "@tanstack/react-router": "^1.170.30",
         "@tanstack/react-start": "^1.168.47",
@@ -478,7 +478,7 @@
 
     "@tanstack/history": ["@tanstack/history@1.162.1", "", {}, "sha512-DR9t6lfLVdrjgCwpglrR9DR7Ok8/HlXjcOE+goWXF3zyuLUO/ug7vMbSFxTqrQTtbRghJfyhmIZ0S6LhPIy44w=="],
 
-    "@tanstack/markdown": ["@tanstack/markdown@0.0.13", "", { "peerDependencies": { "octane": ">=0.1.12", "react": ">=18" }, "optionalPeers": ["octane", "react"] }, "sha512-ZSQP2ulBvlPzdpZeRheBJnaELo7e4ET/D/XrfgweHyqhhLMN5vUJJAUl7ufSRd7GlfO/vwdzjKPh0E0JwqJkDA=="],
+    "@tanstack/markdown": ["@tanstack/markdown@0.0.16", "", { "peerDependencies": { "octane": ">=0.1.12", "react": ">=18" }, "optionalPeers": ["octane", "react"] }, "sha512-2fGZd4VMBwV85lH5AA+Iad9DXU4/Cz+sb/P3honzrh/zqqoSYV/rXuJrG4cC7XJcpofhjbOWBL74AHf4WZrqTw=="],
 
     "@tanstack/query-core": ["@tanstack/query-core@5.101.4", "", {}, "sha512-gNwcvOJcRbLWPOLG/2OBm+zM+Yv+MKsXKEOWC57USuZDEsI71hEErQsiEGx5wX9rzWWkfwM0fVSPoiIFSsxfiw=="],
 
