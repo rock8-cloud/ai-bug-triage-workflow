@@ -19,7 +19,7 @@
         "@mastra/core": "1.65.0",
         "@mastra/loggers": "1.3.10",
         "@mastra/memory": "1.29.0",
-        "@mastra/observability": "1.17.6",
+        "@mastra/observability": "1.22.0",
         "@mastra/pg": "1.23.0",
         "@mastra/rag": "2.7.1",
         "ai": "^7.0.68",
@@ -284,7 +284,7 @@
 
     "@mastra/memory": ["@mastra/memory@1.29.0", "", { "dependencies": { "@mastra/schema-compat": "1.3.9", "async-mutex": "^0.5.0", "diff": "^8.0.3", "json-schema": "^0.4.0", "lru-cache": "^11.2.7", "probe-image-size": "^7.2.3", "tokenx": "^1.3.0", "xxhash-wasm": "^1.1.0", "zod": "^4.4.3" }, "peerDependencies": { "@mastra/core": ">=1.4.1-0 <2.0.0-0" } }, "sha512-GlI8XPGdWF50Pj982ascwHjSAvc8tkr7eNHwyQlp5b141k0jYA8S0X6zBG53v0o0eRDNHPfQWx5qAkErMnrIEg=="],
 
-    "@mastra/observability": ["@mastra/observability@1.17.6", "", { "peerDependencies": { "@mastra/core": ">=1.16.0-0 <2.0.0-0", "zod": "^3.25.0 || ^4.0.0" } }, "sha512-BUlzG+Np/iuGIxyz79i2/GeuDFtS2G6ItMEwEsLTEXeyGEET21/z0eYlV4c1xy1FtSZKSNUkriE1sIOErXfUNw=="],
+    "@mastra/observability": ["@mastra/observability@1.22.0", "", { "peerDependencies": { "@mastra/core": ">=1.16.0-0 <2.0.0-0", "zod": "^3.25.0 || ^4.0.0" } }, "sha512-EgjbggmFeVIordFcbj58X69qwkOsHAhIdg8zVB2pYbew7pbC6ikevdBfkgl7frdV7LMrvBQPQVPTL8n+LmtNaw=="],
 
     "@mastra/pg": ["@mastra/pg@1.23.0", "", { "dependencies": { "async-mutex": "^0.5.0", "pg": "^8.22.0", "pg-connection-string": "^2.12.0", "xxhash-wasm": "^1.1.0" }, "peerDependencies": { "@mastra/core": ">=1.63.1-0 <2.0.0-0" } }, "sha512-DIbbhNRKN6BsAvQBIF79sUe1dzs7s1eFddjO2aMtR+CzanYT5zG03ki4j9vqTN6COKwz/3GgJU0r4ZOWWVjnjw=="],
 
