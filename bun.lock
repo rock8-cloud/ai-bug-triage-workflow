@@ -19,9 +19,9 @@
         "@mastra/core": "1.65.0",
         "@mastra/loggers": "1.3.10",
         "@mastra/memory": "1.29.0",
-        "@mastra/observability": "1.23.0",
+        "@mastra/observability": "1.23.1",
         "@mastra/pg": "1.34.0",
-        "@mastra/rag": "2.7.1",
+        "@mastra/rag": "2.7.2",
         "ai": "^7.0.68",
         "chat": "4.44.0",
         "pg": "^8.23.0",
@@ -284,11 +284,11 @@
 
     "@mastra/memory": ["@mastra/memory@1.29.0", "", { "dependencies": { "@mastra/schema-compat": "1.3.9", "async-mutex": "^0.5.0", "diff": "^8.0.3", "json-schema": "^0.4.0", "lru-cache": "^11.2.7", "probe-image-size": "^7.2.3", "tokenx": "^1.3.0", "xxhash-wasm": "^1.1.0", "zod": "^4.4.3" }, "peerDependencies": { "@mastra/core": ">=1.4.1-0 <2.0.0-0" } }, "sha512-GlI8XPGdWF50Pj982ascwHjSAvc8tkr7eNHwyQlp5b141k0jYA8S0X6zBG53v0o0eRDNHPfQWx5qAkErMnrIEg=="],
 
-    "@mastra/observability": ["@mastra/observability@1.23.0", "", { "peerDependencies": { "@mastra/core": ">=1.16.0-0 <2.0.0-0", "zod": "^3.25.0 || ^4.0.0" } }, "sha512-uF6dBXIhIckDQ3DEHdM9B3R+hD2ieHPSadwz3wt4dKwjPTHbjLYzwek+qYKHIWkITokzGTNXkxvuiICpEB7kKA=="],
+    "@mastra/observability": ["@mastra/observability@1.23.1", "", { "peerDependencies": { "@mastra/core": ">=1.16.0-0 <2.0.0-0", "zod": "^3.25.0 || ^4.0.0" } }, "sha512-yzI/Cp43vz9IeYKHm/3uC3OCIQtz9H22py1sp66+7W5W19X/pBl+lcM1Ee2DzDXcCqeIPWpj83pWU37PHUYRmg=="],
 
     "@mastra/pg": ["@mastra/pg@1.34.0", "", { "dependencies": { "async-mutex": "^0.5.0", "pg": "^8.23.1", "pg-connection-string": "^2.14.1", "xxhash-wasm": "^1.1.0" }, "peerDependencies": { "@mastra/core": ">=1.80.0-0 <2.0.0-0" } }, "sha512-sIc4LSFW82pDS7+3G7Z/sym677ZJ8A1Z4WXGqBqtJ8jIyNZwl0u3M5AuJrCTTSsGS/GeRTxWjpy7j1yQ4J6txA=="],
 
-    "@mastra/rag": ["@mastra/rag@2.7.1", "", { "dependencies": { "@aws-sdk/client-bedrock-agent-runtime": "^3.1156.0", "big.js": "^7.0.1", "js-tiktoken": "^1.0.21", "node-html-better-parser": "^1.5.9", "zeroentropy": "0.1.0-alpha.7" }, "peerDependencies": { "@mastra/core": ">=1.0.0-0 <2.0.0-0", "zod": "^3.25.0 || ^4.0.0" } }, "sha512-/Q3WnNCNzLeKIzzboxqYz1uxYpwASx9LRmySLhoB72NYCLWtoAi8ZH2fDMszBNyhm+gxzWxs2ULBa9LqFWdaBw=="],
+    "@mastra/rag": ["@mastra/rag@2.7.2", "", { "dependencies": { "@aws-sdk/client-bedrock-agent-runtime": "^3.1156.0", "big.js": "^7.0.1", "js-tiktoken": "^1.0.21", "node-html-better-parser": "^1.5.9", "zeroentropy": "0.1.0-alpha.7" }, "peerDependencies": { "@mastra/core": ">=1.0.0-0 <2.0.0-0", "zod": "^3.25.0 || ^4.0.0" } }, "sha512-1p7nOdVcHTaPwete8iwaCKCQ3E5Z0VEbBDnPtwotf5XvAONMTasZAHDdjoWj6+7r+jXML/pAd6glvhx4TCqY5g=="],
 
     "@mastra/schema-compat": ["@mastra/schema-compat@1.3.9", "", { "dependencies": { "json-schema-to-zod": "^2.7.0", "zod-from-json-schema": "^0.5.2" }, "peerDependencies": { "zod": "^3.25.0 || ^4.0.0" } }, "sha512-9qoxJzODLwUwGod2g5nv6yT7Nd2ImSAydz+699Gvxj8u8Jwg6icBMbS7cqk/DFQZlZvJED0N0w6kxkp+Ay/qcg=="],
 
