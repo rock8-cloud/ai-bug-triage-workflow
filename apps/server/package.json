@@ -43,6 +43,6 @@
     "@types/node": "^26.2.0",
     "@types/pg": "^8.23.1",
     "mastra": "1.38.0",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.0"
   }
 }
