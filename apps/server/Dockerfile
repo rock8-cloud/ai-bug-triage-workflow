@@ -10,7 +10,7 @@
 # ran under bun, and Bun 1.3.14 segfaults inside `mastra build` on linux/amd64
 # (arm64 happens to survive). Real node also matches the runtime stage exactly.
 
-FROM node:24-alpine AS build
+FROM node:26-alpine AS build
 COPY --from=oven/bun:1.4.4-alpine /usr/local/bin/bun /usr/local/bin/bun
 WORKDIR /repo
 
@@ -54,7 +54,7 @@ RUN set -eux; cd apps/server/.mastra/output; \
     rm -rf node_modules/@mastra/core/dist/docs node_modules/@mastra/core/dist/test-utils; \
     rm -rf node_modules/typescript
 
-FROM node:24-alpine AS runtime
+FROM node:26-alpine AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=4111
