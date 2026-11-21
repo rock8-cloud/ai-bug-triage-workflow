@@ -10,7 +10,7 @@
     "check": "tsc --noEmit"
   },
   "dependencies": {
-    "mastra": "1.40.0"
+    "mastra": "1.40.1"
   },
   "devDependencies": {
     "@types/bun": "latest",
